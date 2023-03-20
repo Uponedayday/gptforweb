@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { getToken, removeToken, setToken } from './helper'
+import { getToken, removeToken, setToken ,getLoginToken,setLoginToken,removeLoginToken} from './helper'
 import { store } from '@/store'
 import { fetchSession } from '@/api'
 
@@ -10,12 +10,14 @@ interface SessionResponse {
 
 export interface AuthState {
   token: string | undefined
+  loginToken: string | undefined
   session: SessionResponse | null
 }
 
 export const useAuthStore = defineStore('auth-store', {
   state: (): AuthState => ({
     token: getToken(),
+    loginToken:getLoginToken(),
     session: null,
   }),
 
@@ -37,6 +39,15 @@ export const useAuthStore = defineStore('auth-store', {
       }
     },
 
+    // async login() {
+    //   try {
+    //     // 登录接口返回token
+
+    //   } catch (error) {
+
+    //   }
+    // }
+
     setToken(token: string) {
       this.token = token
       setToken(token)
@@ -45,6 +56,16 @@ export const useAuthStore = defineStore('auth-store', {
     removeToken() {
       this.token = undefined
       removeToken()
+    },
+
+    setLoginToken(token: string) {
+      this.loginToken = token
+      setLoginToken(token)
+    },
+
+    removeLoginToken() {
+      this.loginToken = undefined
+      removeLoginToken()
     },
   },
 })

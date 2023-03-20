@@ -20,6 +20,21 @@ const routes: RouteRecordRaw[] = [
   },
 
   {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/login/index.vue'),
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('@/views/register/index.vue'),
+  },
+  {
+    path: '/forgetpassword',
+    name: 'Forgetpassword',
+    component: () => import('@/views/forgetpassword/index.vue'),
+  },
+  {
     path: '/404',
     name: '404',
     component: () => import('@/views/exception/404/index.vue'),
