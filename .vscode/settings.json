@@ -1,0 +1,144 @@
+{
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "San Francisco Mono,SourceCodePro,JetBrains Mono, Oxygen Mono, Consolas,-apple-system",
+    "editor.fontLigatures": false,
+    // 将json文件识别为jsonc格式
+    "files.associations": {
+      "*.vue": "vue",
+      "*.wxss": "css",
+      "*.wxs": "javascript",
+      "*.wpy": "vue",
+      "*.html": "html",
+      "*.json": "jsonc",
+    },
+    "css.validate": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "search.exclude": {
+      "**/bower_components": true,
+      "**/node_modules": true,
+      "**/dist": true,
+    },
+    "files.exclude": {
+      ".cache": true,
+      ".classpath": true,
+      ".idea": true,
+      ".settings": true,
+      ".vscode": true,
+      "**/.classpath": true,
+      "**/.factorypath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/node_modules": false,
+      "package-lock.json": true,
+      "target": true
+    },
+    "eslint.options": {
+      "extensions": [
+        ".js",
+        ".vue"
+      ]
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+      "editor.formatOnSave": false,
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx",
+      "vue": "html",
+      "vue-html": "html"
+    },
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "vue-html": "html",
+      "plaintext": "jade",
+    },
+    "vetur.format.defaultFormatterOptions": {
+      "prettier": {
+        "singleQuote": true,
+      }
+    },
+    "javascript.format.enable": true,
+    "typescript.format.enable": false,
+    "eslint.format.enable": true,
+    // 设置js的formatter为eslint
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    // prettier 选项配置
+    "prettier.semi": true, // 语句末尾添加分号
+    "prettier.singleQuote": true, // 使用单引号
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "always", //(x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+    "prettier.useTabs": false,
+    "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+    "prettier.trailingComma": "es5",
+    "javascript.format.semicolons": "insert",
+    "volar.completion.preferredAttrNameCase": "auto-camel",
+    "volar.codeLens.pugTools": false,
+    "volar.codeLens.scriptSetupTools": true,
+    "volar.completion.preferredTagNameCase": "pascal",
+    "[typescript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // jsonc是有注释的json
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.startupEditor": "welcomePage",
+    "git.enableSmartCommit": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "files.insertFinalNewline": true,
+    "window.openFilesInNewWindow": "off",
+    "files.trimTrailingWhitespace": true,
+    "editor.suggestSelection": "first",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "http.proxySupport": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.autofetch": true,
+    "files.watcherExclude": {
+      "**/.bloop": true,
+      "**/.metals": true,
+      "**/.ammonite": true
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.validate": [
+      "typescript",
+      "javascript",
+      "javascriptreact",
+      "typescriptreact",
+    ],
+    "diffEditor.wordWrap": "on",
+    "editor.maxTokenizationLineLength": 200000000000,
+    "terminal.integrated.fontFamily": "San Francisco Mono,JetBrains Mono, SourceCodePro,Oxygen Mono, Consolas,-apple-system",
+    "editor.fontSize": 20,
+    "editor.fontWeight": "400",
+    "editor.codeLensFontFamily": "San Francisco Mono,SourceCodePro,JetBrains Mono, Oxygen Mono, Consolas,-apple-system",
+    "prettier.proseWrap": "always",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "prettier.singleAttributePerLine": true,
+    "volar.autoCompleteRefs": true,
+    "html.format.wrapAttributes": "preserve",
+    "html.format.preserveNewLines": false,
+    "editor.wordWrap": "on",
+    //  让函数(名)和后面的括号之间加个空格
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "prettier.printWidth": 100,
+    "window.commandCenter": false,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    "eslint.alwaysShowStatus": true,
+  "tabnine.experimentalAutoImports": true,
+    "eslint.autoFixOnSave": true,
+  }
